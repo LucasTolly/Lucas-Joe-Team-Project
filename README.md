@@ -8,5 +8,5 @@ Pathfinder random generator:
 	Origin/Past
 	Reroll button
 	Defining Characteristic
-  Race
-  Name Generator
+	Race
+	Name Generator
