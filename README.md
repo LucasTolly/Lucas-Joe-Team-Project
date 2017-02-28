@@ -3,6 +3,7 @@
 Members:
 * Lucas Tolly
 * Joe Lemke
+* David Yeng
 
 Pathfinder random generator:
 
