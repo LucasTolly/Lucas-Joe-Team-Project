@@ -1,4 +1,8 @@
-# Lucas-Joe-Team-Project
+# Team-Project
+
+* Members:
+	Lucas Tolly
+	Joe Lemke
 
 Pathfinder random generator:
 
