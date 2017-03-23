@@ -3,7 +3,7 @@
 Members:
 * Lucas Tolly
 * Joe Lemke
-* David Yeng
+* David Yang
 
 ## Problem Statement
 
