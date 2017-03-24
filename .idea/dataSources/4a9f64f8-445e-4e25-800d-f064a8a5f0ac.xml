@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="team_project@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="team_project">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="authentication_db"/>
+    <schema id="4" parent="1" name="information_schema"/>
+    <schema id="5" parent="1" name="mysql"/>
+    <schema id="6" parent="1" name="pathfinderdb"/>
+    <schema id="7" parent="1" name="pathfinder_bestiarydb"/>
+    <schema id="8" parent="1" name="performance_schema"/>
+    <schema id="9" parent="1" name="pfsrd_db"/>
+    <schema id="10" parent="1" name="sample"/>
+    <schema id="11" parent="1" name="sys"/>
+    <table id="12" parent="2" name="alignment"/>
+    <table id="13" parent="2" name="classes"/>
+    <table id="14" parent="2" name="description"/>
+    <table id="15" parent="2" name="origin"/>
+    <table id="16" parent="2" name="quirk"/>
+    <table id="17" parent="2" name="races"/>
+    <column id="18" parent="12" name="Alignment_Id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="19" parent="12" name="Lawful_Chaotic">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="20" parent="12" name="Good_Evil">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="21" parent="12" name="PRIMARY">
+      <ColNames>Alignment_Id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="22" parent="13" name="class_name">
+      <Position>1</Position>
+      <DataType>varchar(25)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="23" parent="13" name="pfsrd_link">
+      <Position>2</Position>
+      <DataType>varchar(200)|0</DataType>
+    </column>
+    <key id="24" parent="13" name="PRIMARY">
+      <ColNames>class_name</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="25" parent="14" name="Description_Id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="26" parent="14" name="Description_String">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="27" parent="14" name="PRIMARY">
+      <ColNames>Description_Id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="28" parent="15" name="Origin_Id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="29" parent="15" name="Origin_String">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="30" parent="15" name="PRIMARY">
+      <ColNames>Origin_Id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="31" parent="16" name="Quirk_Id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="32" parent="16" name="Quirk_String">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="33" parent="16" name="PRIMARY">
+      <ColNames>Quirk_Id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="34" parent="17" name="race_name">
+      <Position>1</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="35" parent="17" name="pfsrd_link">
+      <Position>2</Position>
+      <DataType>varchar(200)|0</DataType>
+    </column>
+    <key id="36" parent="17" name="PRIMARY">
+      <ColNames>race_name</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
