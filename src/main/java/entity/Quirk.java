@@ -1,34 +1,53 @@
 package entity;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import org.hibernate.annotations.GenericGenerator;
+
+import javax.persistence.*;
 
 /**
  * Created by Joe on 3/24/2017.
  */
 @Entity
+@Table(name="quirk")
 public class Quirk {
-    private int quirkId;
-    private String quirkString;
 
     @Id
+    @GeneratedValue(generator="increment")
+    @GenericGenerator(name="increment", strategy="increment")
     @Column(name = "Quirk_Id", nullable = false)
+    private int quirkId;
+
+    @Column(name="Quirk_String")
+    private String quirkString;
+
+    /**
+     * Returns the Quirk's id
+     * @return
+     */
     public int getQuirkId() {
         return quirkId;
     }
 
+    /**
+     * Sets the Quirk's Id
+     * @param quirkId
+     */
     public void setQuirkId(int quirkId) {
         this.quirkId = quirkId;
     }
 
-    @Basic
-    @Column(name = "Quirk_String", nullable = true, length = 255)
+    /**
+     * Returns the Quirk's string
+     * @return
+     */
     public String getQuirkString() {
         return quirkString;
     }
 
+    /**
+     * Sets the Quirk's String
+     * @param quirkString
+     */
     public void setQuirkString(String quirkString) {
         this.quirkString = quirkString;
     }
