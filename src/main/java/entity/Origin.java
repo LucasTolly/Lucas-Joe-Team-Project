@@ -1,5 +1,7 @@
 package entity;
 
+import org.hibernate.annotations.GenericGenerator;
+
 import javax.persistence.*;
 
 /**
@@ -8,25 +10,44 @@ import javax.persistence.*;
 @Entity
 @Table(name = "origin")
 public class Origin {
-    private int originId;
-    private String originString;
 
     @Id
+    @GeneratedValue(generator="increment")
+    @GenericGenerator(name="increment", strategy="increment")
     @Column(name = "Origin_Id", nullable = false)
+    private int originId;
+
+    @Column(name = "Origin_String")
+    private String originString;
+
+    /**
+     * Gets the Origin's Id
+     * @return
+     */
     public int getOriginId() {
         return originId;
     }
 
+    /**
+     * Sets the Origin's Id
+     * @param originId
+     */
     public void setOriginId(int originId) {
         this.originId = originId;
     }
 
-    @Basic
-    @Column(name = "Origin_String", nullable = true, length = 255)
+    /**
+     * Gets the Origin's String
+     * @return
+     */
     public String getOriginString() {
         return originString;
     }
 
+    /**
+     * Sets the Origin's String
+     * @param originString
+     */
     public void setOriginString(String originString) {
         this.originString = originString;
     }
