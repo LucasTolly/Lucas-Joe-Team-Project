@@ -13,7 +13,7 @@ Members:
 
 * The service will include the following features to provide fully-fleshed out characters for use.
 
-###Pathfinder random generator:
+Pathfinder random generator:
 
 * Fantasy Level picklist/dropdown menu
 * Picks a random class
